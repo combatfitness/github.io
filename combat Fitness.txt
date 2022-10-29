@@ -1,0 +1,20 @@
+Combat Fitness:
+
+Colors:
+#908590 - beige
+
+
+Categories
+==========
+
+Self defense
+Ninjitsu
+MMA
+Kungfu
+
+
+Camoflage Colors
+===============
+Dark green: #41543d
+Lime green: #9e9b77
+Brown/pink: #564840

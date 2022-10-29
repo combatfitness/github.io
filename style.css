@@ -1,0 +1,179 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap");
+
+@font-face {
+	font-family: "CallOfOpsDuty";
+	src: url("fonts/CallOfOpsDuty.otf") format("opentype");
+	font-style: normal;
+}
+@font-face {
+	font-family: "Stencil Cargo Army";
+	src: url("fonts/Stencil Cargo Army.ttf") format("truetype");
+	font-style: normal;
+}
+@font-face {
+	font-family: "armalite";
+	src: url("fonts/armalite.ttf") format("truetype");
+	font-style: normal;
+}
+@font-face {
+	font-family: "BlackOpsOne-Regular";
+	src: url("fonts/BlackOpsOne-Regular.ttf") format("truetype");
+	font-style: normal;
+}
+
+/* CSS */
+/* body {
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 0.5px;
+} */
+body::before {
+	display: block;
+	content: "";
+	height: 100px;
+}
+
+.offset::before {
+	height: 60px;
+	/* margin-top: -60px; */
+	content: "";
+	display: block;
+}
+
+.offset::after {
+	height: 60px;
+	margin-top: -20px;
+	content: "";
+	display: block;
+}
+
+.logo-text {
+	line-height: 1em;
+	margin-bottom: 0;
+	transform: perspective(2);
+}
+
+.btn,
+.nav-item {
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+.showcase {
+	background: rgba(35, 35, 35, 0.3) url(img/combat-fitness-logo-black-lg.png)
+		no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	background-position: center;
+}
+
+.showcase-img {
+	min-width: 300px;
+}
+
+.showcase-content p.lead {
+	color: #6b7b58;
+	max-width: 80%;
+}
+
+.section-title,
+.army-text {
+	/* font-family: "Oswald", sans-serif; */
+	/* font-family: "CallOfOpsDuty", sans-serif; */
+	/* font-family: "Stencil Cargo Army", sans-serif; */
+	font-family: "armalite", sans-serif;
+	color: #91a96e;
+	text-shadow: 3px 2px 1px #2c2829;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h2.army-text,
+h2.army-text-inverse,
+h2.section-title,
+span.army-text {
+	font-size: 40px;
+}
+
+.army-text-inverse {
+	font-family: "armalite", sans-serif;
+	color: #2c2829;
+	text-shadow: 3px 2px 1px #41543d;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+/* .bg-camo {
+	background: url(img/camo-paint.jpg);
+	opacity: 0.95;
+} */
+
+.bg-green {
+	background: #41543d;
+}
+.bg-lime {
+	background: #9e9b77;
+}
+
+.news-text {
+	text-shadow: 3px 3px 5px black;
+}
+
+.news-input .form-control:focus {
+	border-color: #ffc107;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+.card-title {
+	font-family: "BlackOpsOne-Regular", serif;
+	background-color: #ffc107;
+	color: #2c2829;
+}
+
+.box-1,
+.box-3 {
+	background-color: #41543d !important;
+}
+.box-2 {
+	background-color: #564840 !important;
+}
+/* .box-3 {
+	background-color: #9e9b77 !important;
+} */
+
+.boxes-img {
+	width: 100px;
+	background: #fff;
+	padding: 12px;
+	border-radius: 50%;
+}
+
+.img-box-shadow {
+	box-shadow: 0px 0px 30px #999;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: #9e9b7788;
+	color: #41543d;
+}
+
+/**** Media Queries ****/
+@media (min-width: 768px) {
+	.news-input {
+		width: 50%;
+	}
+}
+
+@media (max-width: 768px) {
+	p.lead {
+		text-align: center;
+		margin: 1em auto;
+	}
+}
+@media (max-width: 991px) {
+	p.lead {
+		font-size: 1rem;
+	}
+}
